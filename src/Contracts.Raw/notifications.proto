@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+option csharp_namespace = "Contracts.Raw.Messages";
+
+package messages;
+
+service Greeter {
+  rpc GetMessage(MessageRequest) returns (MessageResponse);
+  rpc GenerateMessage(MessageRequest) returns (google.protobuf.Empty);
+}
+
+
+message MessageRequest {
+  string Message = 1;
+}
+
+message MessageResponse {
+  string Message = 1;
+}

@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+
+    <RootNamespace>Contracts.ProtobufNet</RootNamespace>
+    <AssemblyName>Contracts.ProtobufNet</AssemblyName>
+
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="protobuf-net.Grpc" Version="1.2.2" />
+    <PackageReference Include="System.ServiceModel.Primitives" Version="8.1.1" />
+  </ItemGroup>
+
+</Project>
